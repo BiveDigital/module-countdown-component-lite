@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * @author denmozz(bivetech@pm.me)
+ * @copyright Copyright (c) 2023 BiveTech (https://github.com/BiveTech)
+ * @package Countdown Component for Magento 2
+ */-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/countdown/service/timer/current-time-diff" method="GET">
+        <service class="Bive\CountdownComponentLite\Api\Service\TimerInterface" method="getCurrentTimeDiff"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+        <data>
+            <parameter name="date">null</parameter>
+        </data>
+    </route>
+    <route url="/V1/countdown/service/timer/sku-special-price" method="GET">
+        <service class="Bive\CountdownComponentLite\Api\Service\TimerInterface" method="getSkuSpecialPrice"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+        <data>
+            <parameter name="sku">null</parameter>
+        </data>
+    </route>
+</routes>

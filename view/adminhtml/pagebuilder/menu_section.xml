@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author denmozz(bivetech@pm.me)
+ * @copyright Copyright (c) 2023 BiveTech (https://github.com/BiveTech)
+ * @package Countdown Component for Magento 2
+ */-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/menu_section.xsd">
+    <menu_section name="bive" translate="label" sortOrder="127" label="Bive Elements" />
+</config>

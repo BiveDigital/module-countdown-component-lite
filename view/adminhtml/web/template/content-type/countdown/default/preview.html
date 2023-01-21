@@ -1,0 +1,20 @@
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false" afterRender="onAfterRender">
+    <render args="getOptions().template"></render>
+
+    <div attr="data.inner.attributes">
+        <ul each="getAvailableElements()">
+            <li css="css">
+                <div class="countdown-element-number"
+                     attr="$parent.data.number.attributes"
+                     ko-style="$parent.data.number.style">00</div>
+                <div attr="$parent.data.label.attributes" ko-style="$parent.data.label.style">
+                    <!-- ko text: label --><!-- /ko -->
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

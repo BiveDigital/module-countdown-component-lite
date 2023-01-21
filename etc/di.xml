@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * @author denmozz(bivetech@pm.me)
+ * @copyright Copyright (c) 2023 BiveTech (https://github.com/BiveTech)
+ * @package Countdown Component for Magento 2
+ */-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Bive\CountdownComponentLite\Api\Service\TimerInterface"
+                type="Bive\CountdownComponentLite\Model\Service\Timer"/>
+
+    <type name="Magento\PageBuilder\Model\WidgetInitializerConfig">
+        <arguments>
+            <argument name="config" xsi:type="array">
+                <item name="countdown" xsi:type="array">
+                    <item name="default" xsi:type="array">
+                        <item name="component" xsi:type="string">Bive_CountdownComponentLite/js/content-type/countdown/appearance/default/widget</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

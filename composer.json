@@ -1,0 +1,21 @@
+{
+	"name": "bive/module-countdown-component-lite",
+	"version": "1.0.0",
+	"description": "Countdown Page Builder Component (Lite)",
+	"type": "magento2-module",
+	"require": {
+		"magento/framework": ">=103.0.5",
+		"magento/module-page-builder": "2.2.*"
+	},
+	"license": [
+		"MIT"
+	],
+	"autoload": {
+		"files": [
+			"registration.php"
+		],
+		"psr-4": {
+			"Bive\\CountdownComponentLite\\": ""
+		}
+	}
+}
