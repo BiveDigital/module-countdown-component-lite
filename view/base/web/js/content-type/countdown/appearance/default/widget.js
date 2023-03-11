@@ -29,10 +29,17 @@ define([
             });
     }
 
+
+
     return (config, element) => {
         const date = element.data('date');
         if (_.isEmpty(date)) {
             return;
+        }
+
+        const isEnabled = name => {
+            const value = parseInt(element.data(name));
+            return !isNaN(value) && value !== 0;
         }
 
         const refs = {
@@ -48,14 +55,14 @@ define([
             element.removeClass('state-loading')
                 .addClass('state-loaded');
 
-            if (!diff) {
+            if (diff <= 0) {
+                isEnabled('hide-after') && element.hide();
                 return;
             }
 
             updateRefs(convert(diff), refs);
 
-            const dynamicValue = parseInt(element.data('dynamic'));
-            if (isNaN(dynamicValue) || dynamicValue === 0) {
+            if (isEnabled('dynamic')) {
                 return;
             }
 

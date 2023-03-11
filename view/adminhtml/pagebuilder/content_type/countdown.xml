@@ -62,6 +62,7 @@
                         <attribute name="name" source="data-content-type"/>
                         <attribute name="appearance" source="data-appearance"/>
                         <attribute name="is_dynamic" source="data-dynamic"/>
+                        <attribute name="hide_after_end" source="data-hide-after"/>
                         <attribute name="end_time" source="data-date"/>
 
                         <css name="css_classes"/>

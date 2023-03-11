@@ -1,6 +1,6 @@
 {
 	"name": "bive/module-countdown-component-lite",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Countdown Page Builder Component (Lite)",
 	"type": "magento2-module",
 	"require": {

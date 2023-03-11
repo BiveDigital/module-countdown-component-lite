@@ -15,13 +15,4 @@
             <parameter name="date">null</parameter>
         </data>
     </route>
-    <route url="/V1/countdown/service/timer/sku-special-price" method="GET">
-        <service class="Bive\CountdownComponentLite\Api\Service\TimerInterface" method="getSkuSpecialPrice"/>
-        <resources>
-            <resource ref="anonymous" />
-        </resources>
-        <data>
-            <parameter name="sku">null</parameter>
-        </data>
-    </route>
 </routes>

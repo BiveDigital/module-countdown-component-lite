@@ -9,7 +9,6 @@ define([
     'Bive_CountdownComponentLite/js/content-type/countdown/appearance/default/widget'
 ], function ($, PreviewBase, elements, widget) {
     'use strict';
-    var $super;
 
     function Preview(parent, config, stageId) {
         PreviewBase.call(this, parent, config, stageId);
@@ -28,7 +27,7 @@ define([
      * @param element
      */
     _proto.onAfterRender = function (element) {
-        setTimeout(() => widget({}, $(element)), 1500)
+        setTimeout(() => widget({}, $(element)), 1000)
     };
 
     return Preview;
